@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <header>100%</header>
+    <nav></nav>
+    <div class="today"></div>
+    <div class="compare-bar ">
+        <div class="good-bar" width="50%"></div>
+        <div class="bad-bar"></div>
+    </div>
+    <form class="input-form">
+        <input type="checkbox" class="positive-negative">
+        <input type="number" class="input-point" step="1" min="1" max="9">
+        <input type="text" class="input-item">
+        <input type="time" class="input-time">
+        <input type="text" placeholder="備註">
+        <button type="submit">送出</button>
+    </form>
+    <article class="today-record">
+        <table class="today-good">
+            <thead>
+                <th>分數</th>
+                <th>事項</th>
+                <th>時間</th>
+                <th>備註</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <table class="today-bad">
+            <thead>
+                <th>分數</th>
+                <th>事項</th>
+                <th>時間</th>
+                <th>備註</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </article>
+
+</body>
+<!-- jquery.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- index.js -->
+<script src="./index.js"></script>
+
+</html>

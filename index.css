@@ -1,0 +1,19 @@
+/* bar */
+
+/* article */
+.today-record {
+    display: flex;
+    justify-content: space-around;
+}
+
+.today-good {
+    width: 40%;
+}
+
+.today-bad {
+    width: 40%;
+}
+
+td {
+    height: 10px;
+}
