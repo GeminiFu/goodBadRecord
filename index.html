@@ -11,6 +11,7 @@
 
 <body>
     <header>100%</header>
+    <button id="send-localStorage">提交</button>
     <nav></nav>
     <div class="today"></div>
     <div class="compare-bar ">
@@ -18,10 +19,10 @@
         <div class="bad-bar"></div>
     </div>
     <form class="input-form">
-        <input type="checkbox" class="positive-negative">
-        <input type="number" class="input-point" step="1" min="1" max="9">
-        <input type="text" class="input-item">
-        <input type="time" class="input-time">
+        <input type="checkbox" class="positive-negative" checked required>
+        <input type="number" class="input-point" step="1" min="1" max="9" value="1" required>
+        <input type="text" class="input-item" placeholder="事項" required>
+        <input type="time" class="input-time" required>
         <input type="text" placeholder="備註">
         <button type="submit">送出</button>
     </form>
