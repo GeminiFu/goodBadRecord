@@ -28,6 +28,7 @@ function Render() {
 
         this.renderHeader();
         this.renderArticle();
+        this.renderBar();
     }
 
     // 計算 good bad 的總和
@@ -130,6 +131,21 @@ function Render() {
         })
 
         this.clearInput();
+    }
+
+    // 渲染 bar
+    this.renderBar = function () {
+        const root = document.documentElement,
+            goodBar = document.getElementsByClassName("good-bar")[0],
+            badBar = document.getElementsByClassName("bad-bar")[0],
+            goodSum = this.sum()[1],
+            badSum = this.sum()[2],
+            sum = goodSum + badSum;
+
+        goodBar.innerHTML = goodSum;
+        badBar.innerHTML = badSum;
+
+        root.style.setProperty("--good-bar-width", `${goodSum / sum * 100}%`)
     }
 
     // 清空 input

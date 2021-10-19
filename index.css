@@ -1,4 +1,28 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --good-bar-width: 50%;
+    --bad-bar-width: calc(100% - var(--good-bar-width));
+}
+
 /* bar */
+.compare-bar { 
+    display: flex;
+}
+
+.good-bar {
+    width: var(--good-bar-width);
+    text-align: center;
+    background: rgba(255, 0, 0, 0.8);
+}
+
+.bad-bar {
+    width: var(--bad-bar-width);
+    text-align: center;
+    background: rgba(0, 0, 255, 0.8);
+}
 
 /* article */
 .today-record {
